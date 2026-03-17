@@ -65,45 +65,39 @@ with col1:
     temperature = st.number_input(
         "อุณหภูมิช่วงเวลานี้ ในองศาเซลเซียส",
         min_value=0, max_value=99,
-        value=1, step=1,
-        help="กรอก 0 หากไม่เคยตั้งครรภ์"
+        value=25, step=1,
     )
 
     apparentTemperature = st.number_input(
         "รู้สึกอุณหภูมิช่วงเวลานี้เท่าไหร่ ในองศาเซลเซียส",
         min_value=0, max_value=300,
-        value=120, step=1,
-        help="ค่าปกติ: 70–100 mg/dL (อดอาหาร)"
+        value=30, step=1,
     )
 
     precipProbability = st.number_input(
         "โอกาศฝนจะตกหรือไม่",
         min_value=0, max_value=150,
-        value=72, step=1,
-        help="ค่าตัวล่างของความดันโลหิต"
+        value=60, step=1,
     )
 
     humidity = st.number_input(
         "ความชื้น",
         min_value=0, max_value=100,
         value=20, step=1,
-        help="วัดที่ต้นแขนด้านหลัง"
     )
 
 with col2:
     windGust = st.number_input(
         "ความเร็วลม",
         min_value=0, max_value=900,
-        value=80, step=1,
-        help="ระดับ insulin ในเลือด 2 ชั่วโมงหลังทดสอบ"
+        value=8, step=1,
     )
 
     pressure = st.number_input(
         "แรงดันอากาศ",
         min_value=0.0, max_value=70.0,
-        value=25.0, step=0.1,
+        value=10.0, step=0.1,
         format="%.1f",
-        help="น้ำหนัก(kg) ÷ ส่วนสูง(m)²"
     )
 
     uvIndex = st.number_input(
@@ -111,13 +105,12 @@ with col2:
         min_value=0.0, max_value=99.0,
         value=0.35, step=0.001,
         format="%.3f",
-        help="ค่าที่สะท้อนความเสี่ยงทางพันธุกรรม (0–2.5)"
     )
 
     precipIntensityMax = st.number_input(
         "โอกาศที่ฝนจะตกในรอบวัน",
         min_value=1, max_value=120,
-        value=30, step=1
+        value=80, step=1
     )
 
 st.divider()
@@ -160,4 +153,4 @@ if predict_button:
     st.success(f"""
         ### โอกาศที่ผู้คนเริ่มอยากใช้บริการ: {abs(prediction[0]/25):.2f}%
         """)
-    st.markdown("![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTlidnMwdjZpNnVnYjVxa3FmbG9pZ2o2Y2wwbWcwOGwxc3Fia29yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aCYDNm1kXgSUgXm/giphy.gif)")
+    st.markdown("![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTlidnMwdjZpNnVnYjVxa3FmbG9pZ2o2Y2wwbWcwOGwxc3Fia29yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7a
