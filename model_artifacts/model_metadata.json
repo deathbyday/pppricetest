@@ -1,0 +1,20 @@
+{
+  "model_type": "LinearRegression",
+  "accuracy": 0.2497,
+  "n_features": 1,
+  "feature_names": [
+    "temperature",
+    "apparentTemperature",   
+    "precipProbability",     
+    "humidity",              
+    "windGust",             
+    "pressure",             
+    "uvIndex",             
+    "precipIntensityMax"
+  ],
+  "target_names": [
+    "ค่าราคา"
+  ],
+  "training_samples": 614,
+  "test_samples": 154
+}

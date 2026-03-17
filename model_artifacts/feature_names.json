@@ -1,0 +1,8 @@
+["temperature",
+    "apparentTemperature",   
+    "precipProbability",     
+    "humidity",              
+    "windGust",             
+    "pressure",             
+    "uvIndex",             
+    "precipIntensityMax"]
