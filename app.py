@@ -64,19 +64,19 @@ with col1:
     # st.number_input สำหรับตัวเลขที่ต้องการความแม่นยำ
     temperature = st.number_input(
         "อุณหภูมิช่วงเวลานี้ ในองศาเซลเซียส",
-        min_value=0, max_value=99,
+        min_value=-20, max_value=40,
         value=25, step=1,
     )
 
     apparentTemperature = st.number_input(
         "รู้สึกอุณหภูมิช่วงเวลานี้เท่าไหร่ ในองศาเซลเซียส",
-        min_value=0, max_value=300,
+        min_value=-30, max_value=50,
         value=30, step=1,
     )
 
     precipProbability = st.number_input(
         "ค่า UV มีเท่าไหร่",
-        min_value=0, max_value=150,
+        min_value=0, max_value=20,
         value=60, step=1,
     )
 
@@ -95,15 +95,15 @@ with col2:
 
     pressure = st.number_input(
         "แรงดันอากาศ",
-        min_value=0.0, max_value=70.0,
-        value=10.0, step=0.1,
+        min_value=0, max_value=70.,
+        value=10, step=1,
         format="%.1f",
     )
 
     uvIndex = st.number_input(
         "โอกาศฝนจะตกหรือไม่",
-        min_value=0.0, max_value=99.0,
-        value=0.35, step=0.001,
+        min_value=0, max_value=99,
+        value=35, step=1,
         format="%.3f",
     )
 
