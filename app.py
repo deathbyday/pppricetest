@@ -95,7 +95,7 @@ with col2:
 
     pressure = st.number_input(
         "แรงดันอากาศ",
-        min_value=0, max_value=70.,
+        min_value=0, max_value=70,
         value=10, step=1,
 
     )
@@ -104,7 +104,6 @@ with col2:
         "โอกาศฝนจะตกหรือไม่",
         min_value=0, max_value=99,
         value=35, step=1,
-        format="%.3f",
     )
 
     precipIntensityMax = st.number_input(
