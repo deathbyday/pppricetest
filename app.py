@@ -150,9 +150,11 @@ if predict_button:
     st.subheader("ผลการคำนวณ")
     if abs(prediction[0]/25) > 100:
         prediction = 100
-
-
-    st.success(f"""
+        st.success(f"""
+        ### โอกาศที่ผู้คนเริ่มอยากใช้บริการ: {(prediction):.2f}%
+        """)
+    else: 
+        st.success(f"""
         ### โอกาศที่ผู้คนเริ่มอยากใช้บริการ: {abs(prediction[0]/25):.2f}%
         """)
     st.markdown("![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTlidnMwdjZpNnVnYjVxa3FmbG9pZ2o2Y2wwbWcwOGwxc3Fia29yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aCYDNm1kXgSUgXm/giphy.gif)")
