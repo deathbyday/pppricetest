@@ -74,8 +74,8 @@ with col1:
         value=30, step=1,
     )
 
-    uvIndex = st.number_input(
-        "ค้่ UV วันนี้เท่าไหร่",
+    precipProbability = st.number_input(
+        "โอกาศฝนจะตกหรือไม่",
         min_value=0, max_value=150,
         value=60, step=1,
     )
@@ -100,7 +100,7 @@ with col2:
         format="%.1f",
     )
 
-    precipProbability = st.number_input(
+    uvIndex = st.number_input(
         "โอกาศฝนจะตกหรือไม่",
         min_value=0.0, max_value=99.0,
         value=0.35, step=0.001,
@@ -154,3 +154,4 @@ if predict_button:
         ### โอกาศที่ผู้คนเริ่มอยากใช้บริการ: {abs(prediction[0]/25):.2f}%
         """)
     st.markdown("![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTlidnMwdjZpNnVnYjVxa3FmbG9pZ2o2Y2wwbWcwOGwxc3Fia29yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aCYDNm1kXgSUgXm/giphy.gif)")
+
