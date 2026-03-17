@@ -77,7 +77,7 @@ with col1:
     precipProbability = st.number_input(
         "ค่า UV มีเท่าไหร่",
         min_value=0, max_value=20,
-        value=60, step=1,
+        value=15, step=1,
     )
 
     humidity = st.number_input(
@@ -158,3 +158,4 @@ if predict_button:
         ### โอกาศที่ผู้คนเริ่มอยากใช้บริการ: {abs(prediction[0]/25):.2f}%
         """)
     st.markdown("![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTlidnMwdjZpNnVnYjVxa3FmbG9pZ2o2Y2wwbWcwOGwxc3Fia29yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aCYDNm1kXgSUgXm/giphy.gif)")
+
