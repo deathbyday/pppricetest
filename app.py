@@ -38,7 +38,7 @@ with st.sidebar:
     st.write(f"**ประเภทโมเดล:** {metadata['model_type']}")
     st.write(f"**ความแม่นยำ:** {metadata['accuracy']*100:.1f}%")
     st.write(f"**ข้อมูล train:** {metadata['training_samples']:,} ราย")
-
+    st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
     st.divider()  # เส้นคั่น
 
     st.subheader("⚠️ ข้อควรระวัง")
@@ -53,8 +53,6 @@ st.markdown("""
 """)
 
 st.divider()
-st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
-
 # ===== ส่วนรับ Input =====
 st.subheader("ข้อมูล")
 
