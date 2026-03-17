@@ -97,7 +97,7 @@ with col2:
         "แรงดันอากาศ",
         min_value=0, max_value=70.,
         value=10, step=1,
-        format="%.1f",
+
     )
 
     uvIndex = st.number_input(
