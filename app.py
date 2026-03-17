@@ -74,8 +74,8 @@ with col1:
         value=30, step=1,
     )
 
-    precipProbability = st.number_input(
-        "โอกาศฝนจะตกหรือไม่",
+    uvIndex = st.number_input(
+        "ค้่ UV วันนี้เท่าไหร่",
         min_value=0, max_value=150,
         value=60, step=1,
     )
@@ -100,8 +100,8 @@ with col2:
         format="%.1f",
     )
 
-    uvIndex = st.number_input(
-        "ค่า UV",
+    precipProbability = st.number_input(
+        "โอกาศฝนจะตกหรือไม่",
         min_value=0.0, max_value=99.0,
         value=0.35, step=0.001,
         format="%.3f",
